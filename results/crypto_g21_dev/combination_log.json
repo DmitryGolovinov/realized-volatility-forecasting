@@ -1,0 +1,378 @@
+{
+ "BTCUSDT": [
+  {
+   "origin": 1252,
+   "history_rows": 252,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.2,
+    "RF": 0.3,
+    "NN": 0.0,
+    "LSTM": 0.5
+   },
+   "hist_qlike": 0.20143270147593015,
+   "best_prior": "LSTM",
+   "hessian_min_eig": 0.003202911724505228,
+   "share_f_gt_2rv": 0.28174603174603174
+  },
+  {
+   "origin": 1504,
+   "history_rows": 504,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.7,
+    "RF": 0.3,
+    "NN": 0.0,
+    "LSTM": 0.0
+   },
+   "hist_qlike": 0.25406651708318,
+   "best_prior": "HARX",
+   "hessian_min_eig": 0.011159151983988189,
+   "share_f_gt_2rv": 0.2718253968253968
+  },
+  {
+   "origin": 1756,
+   "history_rows": 756,
+   "weights": {
+    "HAR": 0.2,
+    "HARX": 0.8,
+    "RF": 0.0,
+    "NN": 0.0,
+    "LSTM": 0.0
+   },
+   "hist_qlike": 0.3467359359081442,
+   "best_prior": "HARX",
+   "hessian_min_eig": 0.006473696900199755,
+   "share_f_gt_2rv": 0.35185185185185186
+  }
+ ],
+ "ETHUSDT": [
+  {
+   "origin": 1252,
+   "history_rows": 252,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.0,
+    "RF": 0.6,
+    "NN": 0.1,
+    "LSTM": 0.3
+   },
+   "hist_qlike": 0.17112350287263617,
+   "best_prior": "RF",
+   "hessian_min_eig": 0.00582793583961794,
+   "share_f_gt_2rv": 0.1984126984126984
+  },
+  {
+   "origin": 1504,
+   "history_rows": 504,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.0,
+    "RF": 0.6,
+    "NN": 0.0,
+    "LSTM": 0.4
+   },
+   "hist_qlike": 0.21532998159503375,
+   "best_prior": "RF",
+   "hessian_min_eig": 0.010667774340785344,
+   "share_f_gt_2rv": 0.22420634920634921
+  },
+  {
+   "origin": 1756,
+   "history_rows": 756,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.0,
+    "RF": 0.4,
+    "NN": 0.0,
+    "LSTM": 0.6
+   },
+   "hist_qlike": 0.2778241162979194,
+   "best_prior": "LSTM",
+   "hessian_min_eig": 0.009145250505131031,
+   "share_f_gt_2rv": 0.28174603174603174
+  }
+ ],
+ "BNBUSDT": [
+  {
+   "origin": 1252,
+   "history_rows": 252,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.9,
+    "RF": 0.0,
+    "NN": 0.1,
+    "LSTM": 0.0
+   },
+   "hist_qlike": 0.20589462235996997,
+   "best_prior": "HARX",
+   "hessian_min_eig": 0.0036421382360739894,
+   "share_f_gt_2rv": 0.2698412698412698
+  },
+  {
+   "origin": 1504,
+   "history_rows": 504,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.9,
+    "RF": 0.0,
+    "NN": 0.0,
+    "LSTM": 0.1
+   },
+   "hist_qlike": 0.2216413231069012,
+   "best_prior": "HARX",
+   "hessian_min_eig": 0.005448293998909083,
+   "share_f_gt_2rv": 0.24603174603174602
+  },
+  {
+   "origin": 1756,
+   "history_rows": 756,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.7,
+    "RF": 0.3,
+    "NN": 0.0,
+    "LSTM": 0.0
+   },
+   "hist_qlike": 0.25025643540615533,
+   "best_prior": "HARX",
+   "hessian_min_eig": 0.005011777335569926,
+   "share_f_gt_2rv": 0.2791005291005291
+  }
+ ],
+ "XRPUSDT": [
+  {
+   "origin": 1252,
+   "history_rows": 252,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.8,
+    "RF": 0.0,
+    "NN": 0.0,
+    "LSTM": 0.2
+   },
+   "hist_qlike": 0.361822458456673,
+   "best_prior": "HARX",
+   "hessian_min_eig": 0.0021595998104920466,
+   "share_f_gt_2rv": 0.38095238095238093
+  },
+  {
+   "origin": 1504,
+   "history_rows": 504,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.6,
+    "RF": 0.0,
+    "NN": 0.0,
+    "LSTM": 0.4
+   },
+   "hist_qlike": 0.3015595787107799,
+   "best_prior": "HARX",
+   "hessian_min_eig": 0.007381154378337114,
+   "share_f_gt_2rv": 0.32936507936507936
+  },
+  {
+   "origin": 1756,
+   "history_rows": 756,
+   "weights": {
+    "HAR": 0.4,
+    "HARX": 0.0,
+    "RF": 0.0,
+    "NN": 0.0,
+    "LSTM": 0.6
+   },
+   "hist_qlike": 0.4743333421964219,
+   "best_prior": "LSTM",
+   "hessian_min_eig": 0.003794069007987743,
+   "share_f_gt_2rv": 0.41534391534391535
+  }
+ ],
+ "ADAUSDT": [
+  {
+   "origin": 1252,
+   "history_rows": 252,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.0,
+    "RF": 0.6,
+    "NN": 0.0,
+    "LSTM": 0.4
+   },
+   "hist_qlike": 0.24874994543661716,
+   "best_prior": "RF",
+   "hessian_min_eig": 0.00604175441024385,
+   "share_f_gt_2rv": 0.36904761904761907
+  },
+  {
+   "origin": 1504,
+   "history_rows": 504,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.0,
+    "RF": 0.2,
+    "NN": 0.0,
+    "LSTM": 0.8
+   },
+   "hist_qlike": 0.2375171626677327,
+   "best_prior": "LSTM",
+   "hessian_min_eig": 0.006470013034785022,
+   "share_f_gt_2rv": 0.31547619047619047
+  },
+  {
+   "origin": 1756,
+   "history_rows": 756,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.0,
+    "RF": 1.0,
+    "NN": 0.0,
+    "LSTM": 0.0
+   },
+   "hist_qlike": 0.25156926350025066,
+   "best_prior": "RF",
+   "hessian_min_eig": 0.011503702753321176,
+   "share_f_gt_2rv": 0.31216931216931215
+  }
+ ],
+ "LTCUSDT": [
+  {
+   "origin": 1252,
+   "history_rows": 252,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.8,
+    "RF": 0.0,
+    "NN": 0.2,
+    "LSTM": 0.0
+   },
+   "hist_qlike": 0.20279588278639407,
+   "best_prior": "HARX",
+   "hessian_min_eig": 0.003958863642702382,
+   "share_f_gt_2rv": 0.21428571428571427
+  },
+  {
+   "origin": 1504,
+   "history_rows": 504,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.7,
+    "RF": 0.0,
+    "NN": 0.2,
+    "LSTM": 0.1
+   },
+   "hist_qlike": 0.18994195403833808,
+   "best_prior": "HARX",
+   "hessian_min_eig": 0.003978511637872623,
+   "share_f_gt_2rv": 0.20634920634920634
+  },
+  {
+   "origin": 1756,
+   "history_rows": 756,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.7,
+    "RF": 0.3,
+    "NN": 0.0,
+    "LSTM": 0.0
+   },
+   "hist_qlike": 0.2823468495515741,
+   "best_prior": "HARX",
+   "hessian_min_eig": 0.0040049250256928735,
+   "share_f_gt_2rv": 0.2566137566137566
+  }
+ ],
+ "TRXUSDT": [
+  {
+   "origin": 1252,
+   "history_rows": 252,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.0,
+    "RF": 0.0,
+    "NN": 1.0,
+    "LSTM": 0.0
+   },
+   "hist_qlike": 0.23609561125824324,
+   "best_prior": "NN",
+   "hessian_min_eig": 0.005297628219785754,
+   "share_f_gt_2rv": 0.3055555555555556
+  },
+  {
+   "origin": 1504,
+   "history_rows": 504,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 1.0,
+    "RF": 0.0,
+    "NN": 0.0,
+    "LSTM": 0.0
+   },
+   "hist_qlike": 0.24639451405912152,
+   "best_prior": "HARX",
+   "hessian_min_eig": 0.004850631549364876,
+   "share_f_gt_2rv": 0.2916666666666667
+  },
+  {
+   "origin": 1756,
+   "history_rows": 756,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.9,
+    "RF": 0.0,
+    "NN": 0.1,
+    "LSTM": 0.0
+   },
+   "hist_qlike": 0.26832598389333345,
+   "best_prior": "HARX",
+   "hessian_min_eig": 0.008623183445785599,
+   "share_f_gt_2rv": 0.2791005291005291
+  }
+ ],
+ "XLMUSDT": [
+  {
+   "origin": 1252,
+   "history_rows": 252,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.2,
+    "RF": 0.4,
+    "NN": 0.0,
+    "LSTM": 0.4
+   },
+   "hist_qlike": 0.23209201226274326,
+   "best_prior": "RF",
+   "hessian_min_eig": 0.005822103236208998,
+   "share_f_gt_2rv": 0.2896825396825397
+  },
+  {
+   "origin": 1504,
+   "history_rows": 504,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.3,
+    "RF": 0.5,
+    "NN": 0.0,
+    "LSTM": 0.2
+   },
+   "hist_qlike": 0.19204796417263525,
+   "best_prior": "RF",
+   "hessian_min_eig": 0.006030385681611267,
+   "share_f_gt_2rv": 0.24404761904761904
+  },
+  {
+   "origin": 1756,
+   "history_rows": 756,
+   "weights": {
+    "HAR": 0.0,
+    "HARX": 0.0,
+    "RF": 0.2,
+    "NN": 0.0,
+    "LSTM": 0.8
+   },
+   "hist_qlike": 0.29192924024543143,
+   "best_prior": "LSTM",
+   "hessian_min_eig": 0.008608010528950083,
+   "share_f_gt_2rv": 0.25925925925925924
+  }
+ ]
+}

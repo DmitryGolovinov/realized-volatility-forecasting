@@ -1,0 +1,122 @@
+{
+ "aapl_final_block_previously_viewed": true,
+ "calendar": {
+  "first_date": "2001-01-29",
+  "key_rows": {
+   "0": "2001-01-29",
+   "1000": "2005-01-24",
+   "3404": "2014-08-14",
+   "3405": "2014-08-15",
+   "4256": "2018-01-02"
+  },
+  "last_date": "2018-01-02",
+  "mean_sign_agreement_of_5": 4.831571529245948,
+  "method": "Viterbi alignment of sign(r_d < 0) to sign(public open-to-close < 0); rows may omit exchange days, never repeat or reorder them",
+  "min_rolling20_agreement_of_5": 4.35,
+  "omitted_exchange_days": [
+   "2005-08-03",
+   "2013-06-06"
+  ],
+  "per_asset_sign_agreement": {
+   "AAPL": 0.9807376086445854,
+   "BA": 0.9633544749823819,
+   "IBM": 0.9631195677707306,
+   "JPM": 0.9701667841202725,
+   "PG": 0.9541930937279774
+  },
+  "reads_reserved_rows": "sign of r_d only (rows >= 3405 included), to date them; no variance, target, or model output is read",
+  "reference": "Yahoo Finance daily Open/Close via yfinance (not stored)",
+  "retrieved_utc": "2026-09-24T04:54:13Z",
+  "rows": 4257,
+  "rows_with_agreement_le_2": 4,
+  "shifted_minus1_agreement": 0.4923655156213296,
+  "shifted_plus1_agreement": 0.4939628846605591,
+  "skip_margins": [
+   {
+    "margin_vs_shift_1_3_rows": -0.0,
+    "omitted_days": 1,
+    "row": 1133
+   },
+   {
+    "margin_vs_shift_1_3_rows": 1.0,
+    "omitted_days": 1,
+    "row": 3105
+   }
+  ],
+  "switch_refinement": [
+   {
+    "chosen_row": 1133,
+    "value_distance_chosen": 0.01536434334512634,
+    "value_distance_runner_up": 0.01900247833818479,
+    "viterbi_row": 1133
+   },
+   {
+    "chosen_row": 3105,
+    "value_distance_chosen": 0.011501182847614963,
+    "value_distance_runner_up": 0.02736253049582172,
+    "viterbi_row": 3105
+   }
+  ],
+  "yfinance_version": "1.7.0"
+ },
+ "command": "python scripts/run_study.py --mode final",
+ "config_sha256": "4ed99606705e6caede763f64a6a0e1dcc168f226a7c347f3f3ba9fe75fad8cbd",
+ "data_sha256": {
+  "AAPL_data.parquet": "d0a0148338be635ea3f047e2459d52abfdafff29d2edc53efe32bb755e8d3cc9",
+  "BA_data.parquet": "1d32d02581c6e07d353db0e26c67b50c47c052b5cc8753093c4392fac4b596b1",
+  "IBM_data.parquet": "bbc08cb8144b78265eeb977ae178096fb69698d1ad592cd9a46fc450ff18b225",
+  "JPM_data.parquet": "565b3c7895b6c096fe4740bbbbd235525e511d3901905b7062687188c1b45e5f",
+  "PG_data.parquet": "8d483d7c08a37c0034fa77c5981ab4a63c8f5dee61d7aad32720b9c14cb160b0",
+  "macro_data.parquet": "a7e5410e661f79d1c88faf768d659093991dcd8889f748bfb1d3493e720e11e6"
+ },
+ "environment": {
+  "machine": "arm64",
+  "packages": {
+   "numpy": "2.4.6",
+   "pandas": "3.0.6",
+   "scikit-learn": "1.9.1",
+   "torch": "2.14.0"
+  },
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "processor": "arm",
+  "python": "3.11.3"
+ },
+ "evaluation_rows": {
+  "AAPL": {
+   "first_row": 3405,
+   "last_row": 4255
+  },
+  "BA": {
+   "first_row": 3405,
+   "last_row": 4255
+  },
+  "IBM": {
+   "first_row": 3405,
+   "last_row": 4255
+  },
+  "JPM": {
+   "first_row": 3405,
+   "last_row": 4255
+  },
+  "PG": {
+   "first_row": 3405,
+   "last_row": 4255
+  }
+ },
+ "git_commit": null,
+ "mode": "final",
+ "outputs": {
+  "blocks.csv": "ffbe23541451558945d9a2ccdd86fec681fd8d19529ca96590080e4e562336d0",
+  "calendar_years.csv": "811ad4b74d3939408d49cb1760f1f5834cc5d88dce3eab8174696868cb2d6331",
+  "combination_log.json": "5241034a319caf3c51a19c4acbbfc6593cb7c4c73450b0c6dc9097619fb396ff",
+  "comparison.csv": "766024dc510e0bfdf1cc823aecfd46029bb2256a36a2a85894a01bb3ce0cbefb",
+  "descriptive_high_rv_slice.csv": "0c663eb12b8d21ff31185ed48286913fd42a1e757bfb5f5494aaf6a3d31f3a76",
+  "pooled_vs_specific.csv": "26c9f8e9992cc44e9ad06a97298abe9c7ccc8d50c578691a0e40f38b6be4afa4"
+ },
+ "reserved_final_start_row": 3405,
+ "runtime_seconds": 1216.467358083988,
+ "seed": 0,
+ "source_tree_sha256": "28b6e6ed6f1a54f8b2c1fa81409f99ed0e284c845afc62c2d34456156a5f6bf0",
+ "study": "realized-volatility-forecasting",
+ "written_utc": "2026-09-24T05:44:01Z"
+}

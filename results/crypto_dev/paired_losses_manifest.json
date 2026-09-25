@@ -1,0 +1,52 @@
+{
+ "assets": [
+  "BTCUSDT",
+  "ETHUSDT",
+  "BNBUSDT",
+  "XRPUSDT",
+  "ADAUSDT",
+  "LTCUSDT",
+  "TRXUSDT",
+  "XLMUSDT"
+ ],
+ "bootstrap": {
+  "block_dates": 20,
+  "joint_over_assets": true,
+  "n_boot": 2000,
+  "seed": 0
+ },
+ "command": "python scripts/paired_losses.py crypto_dev",
+ "evaluation_first_row": 1252,
+ "evaluation_last_row": 1824,
+ "forecast_files_sha256": {
+  "ADAUSDT": "3e64143ac04fe28be1f8b1f717d5102c0d8e5b722953c32f316a89c913b8da31",
+  "BNBUSDT": "22507ee5170236c1dbfe7858d9251adb2b50bf9bdd6f26d42519bbb342a51a18",
+  "BTCUSDT": "d5aec52ae38933eca89d3e7d289ce356c75ff33e83ff354e9624bcb38fec2172",
+  "ETHUSDT": "b58f5f5926537213d8289b3a23b2475d5cd444e2ce5e123f63dbe7786ec927fa",
+  "LTCUSDT": "0dd858ab204a6073a5f7ef498999104ed73e269c4b42fc3a7b232c00fb3212a1",
+  "TRXUSDT": "2b8a046d35a1dd1a51d327abd7c700ab213a3ba9792b692ca578eac263b55214",
+  "XLMUSDT": "edf64023d889da989b0c4ecf7af2946fc3eb27cb60dfe38d6b6473e53eb3bcfc",
+  "XRPUSDT": "f16f7fb221ec86ef55ef5e742f2ca9712b1bdaa5b7120d38f1c83308387316dc"
+ },
+ "hac_lags": 5,
+ "max_rel_diff_vs_comparison_csv": 2.2201478603070474e-16,
+ "outputs": {
+  "model_losses.csv": "af78c9f572b32f1888ca0eb30d9c06f492f6cb81b0a4f818ac8f8a1acacb4079",
+  "paired_losses.csv": "bd8868fc63ce0be3a40ec7346ef13a5d7ef17e75f96d73e3ab1805221413d221"
+ },
+ "run": "crypto_dev",
+ "run_manifest_sha256": "05290267d8e0e2d8eed457685c809959a440afba4e5375e3f65b05730af59c53",
+ "samples": {
+  "all": {
+   "dates": 573,
+   "dates_excluded": 0
+  },
+  "target_coverage_ge_95pct": {
+   "dates": 572,
+   "dates_excluded": 1
+  }
+ },
+ "source_tree_sha256": "b0a61ff813e603fcdd6d5e881c08ea2f3eeefa5576789b0a2b0213bc32fe8552",
+ "study": "realized-volatility-forecasting / raw paired losses (joint date bootstrap)",
+ "written_utc": "2026-09-25T01:52:34Z"
+}

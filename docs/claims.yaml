@@ -1,0 +1,97 @@
+manifests: [results/dev/manifest.json, results/final/manifest.json, results/crypto_dev/manifest.json, results/crypto_final/manifest.json, results/crypto_g21_dev/manifest.json, results/crypto_g21_final/manifest.json, results/crypto_final/paired_losses_manifest.json, results/final/paired_losses_manifest.json]
+claims:
+  - {id: t_dev_NN_pooled, file: results/dev/summary_by_model.csv, kind: csv, selector: {filter: {model: NN_pooled}, column: QLIKE_rel_HAR}, value: 0.894, decimals: 3, tol: 0.0005}
+  - {id: t_final_NN_pooled, file: results/final/summary_by_model.csv, kind: csv, selector: {filter: {model: NN_pooled}, column: QLIKE_rel_HAR}, value: 0.783, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_dev_NN_pooled, file: results/crypto_dev/summary_by_model.csv, kind: csv, selector: {filter: {model: NN_pooled}, column: QLIKE_rel_HAR}, value: 0.705, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_final_NN_pooled, file: results/crypto_final/summary_by_model.csv, kind: csv, selector: {filter: {model: NN_pooled}, column: QLIKE_rel_HAR}, value: 0.737, decimals: 3, tol: 0.0005}
+  - {id: t_dev_NN, file: results/dev/summary_by_model.csv, kind: csv, selector: {filter: {model: NN}, column: QLIKE_rel_HAR}, value: 1.219, decimals: 3, tol: 0.00041}
+  - {id: t_final_NN, file: results/final/summary_by_model.csv, kind: csv, selector: {filter: {model: NN}, column: QLIKE_rel_HAR}, value: 0.792, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_dev_NN, file: results/crypto_dev/summary_by_model.csv, kind: csv, selector: {filter: {model: NN}, column: QLIKE_rel_HAR}, value: 0.719, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_final_NN, file: results/crypto_final/summary_by_model.csv, kind: csv, selector: {filter: {model: NN}, column: QLIKE_rel_HAR}, value: 0.796, decimals: 3, tol: 0.0005}
+  - {id: t_dev_HARX, file: results/dev/summary_by_model.csv, kind: csv, selector: {filter: {model: HARX}, column: QLIKE_rel_HAR}, value: 1.055, decimals: 3, tol: 0.000474}
+  - {id: t_final_HARX, file: results/final/summary_by_model.csv, kind: csv, selector: {filter: {model: HARX}, column: QLIKE_rel_HAR}, value: 0.795, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_dev_HARX, file: results/crypto_dev/summary_by_model.csv, kind: csv, selector: {filter: {model: HARX}, column: QLIKE_rel_HAR}, value: 0.705, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_final_HARX, file: results/crypto_final/summary_by_model.csv, kind: csv, selector: {filter: {model: HARX}, column: QLIKE_rel_HAR}, value: 0.827, decimals: 3, tol: 0.0005}
+  - {id: t_dev_RF, file: results/dev/summary_by_model.csv, kind: csv, selector: {filter: {model: RF}, column: QLIKE_rel_HAR}, value: 0.992, decimals: 3, tol: 0.0005}
+  - {id: t_final_RF, file: results/final/summary_by_model.csv, kind: csv, selector: {filter: {model: RF}, column: QLIKE_rel_HAR}, value: 0.835, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_dev_RF, file: results/crypto_dev/summary_by_model.csv, kind: csv, selector: {filter: {model: RF}, column: QLIKE_rel_HAR}, value: 0.731, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_final_RF, file: results/crypto_final/summary_by_model.csv, kind: csv, selector: {filter: {model: RF}, column: QLIKE_rel_HAR}, value: 0.761, decimals: 3, tol: 0.0005}
+  - {id: t_dev_LSTM, file: results/dev/summary_by_model.csv, kind: csv, selector: {filter: {model: LSTM}, column: QLIKE_rel_HAR}, value: 1.029, decimals: 3, tol: 0.000486}
+  - {id: t_final_LSTM, file: results/final/summary_by_model.csv, kind: csv, selector: {filter: {model: LSTM}, column: QLIKE_rel_HAR}, value: 0.791, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_dev_LSTM, file: results/crypto_dev/summary_by_model.csv, kind: csv, selector: {filter: {model: LSTM}, column: QLIKE_rel_HAR}, value: 0.712, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_final_LSTM, file: results/crypto_final/summary_by_model.csv, kind: csv, selector: {filter: {model: LSTM}, column: QLIKE_rel_HAR}, value: 0.746, decimals: 3, tol: 0.0005}
+  - {id: t_dev_logHAR, file: results/dev/summary_by_model.csv, kind: csv, selector: {filter: {model: logHAR}, column: QLIKE_rel_HAR}, value: 0.943, decimals: 3, tol: 0.0005}
+  - {id: t_final_logHAR, file: results/final/summary_by_model.csv, kind: csv, selector: {filter: {model: logHAR}, column: QLIKE_rel_HAR}, value: 0.921, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_dev_logHAR, file: results/crypto_dev/summary_by_model.csv, kind: csv, selector: {filter: {model: logHAR}, column: QLIKE_rel_HAR}, value: 0.721, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_final_logHAR, file: results/crypto_final/summary_by_model.csv, kind: csv, selector: {filter: {model: logHAR}, column: QLIKE_rel_HAR}, value: 0.783, decimals: 3, tol: 0.0005}
+  - {id: t_dev_EqualWeight, file: results/dev/summary_by_model.csv, kind: csv, selector: {filter: {model: EqualWeight}, column: QLIKE_rel_HAR}, value: 0.898, decimals: 3, tol: 0.0005}
+  - {id: t_final_EqualWeight, file: results/final/summary_by_model.csv, kind: csv, selector: {filter: {model: EqualWeight}, column: QLIKE_rel_HAR}, value: 0.806, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_dev_EqualWeight, file: results/crypto_dev/summary_by_model.csv, kind: csv, selector: {filter: {model: EqualWeight}, column: QLIKE_rel_HAR}, value: 0.721, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_final_EqualWeight, file: results/crypto_final/summary_by_model.csv, kind: csv, selector: {filter: {model: EqualWeight}, column: QLIKE_rel_HAR}, value: 0.752, decimals: 3, tol: 0.0005}
+  - {id: t_dev_Median, file: results/dev/summary_by_model.csv, kind: csv, selector: {filter: {model: Median}, column: QLIKE_rel_HAR}, value: 0.924, decimals: 3, tol: 0.0005}
+  - {id: t_final_Median, file: results/final/summary_by_model.csv, kind: csv, selector: {filter: {model: Median}, column: QLIKE_rel_HAR}, value: 0.792, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_dev_Median, file: results/crypto_dev/summary_by_model.csv, kind: csv, selector: {filter: {model: Median}, column: QLIKE_rel_HAR}, value: 0.703, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_final_Median, file: results/crypto_final/summary_by_model.csv, kind: csv, selector: {filter: {model: Median}, column: QLIKE_rel_HAR}, value: 0.735, decimals: 3, tol: 0.0005}
+  - {id: t_dev_Trimmed, file: results/dev/summary_by_model.csv, kind: csv, selector: {filter: {model: Trimmed}, column: QLIKE_rel_HAR}, value: 0.914, decimals: 3, tol: 0.0005}
+  - {id: t_final_Trimmed, file: results/final/summary_by_model.csv, kind: csv, selector: {filter: {model: Trimmed}, column: QLIKE_rel_HAR}, value: 0.795, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_dev_Trimmed, file: results/crypto_dev/summary_by_model.csv, kind: csv, selector: {filter: {model: Trimmed}, column: QLIKE_rel_HAR}, value: 0.704, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_final_Trimmed, file: results/crypto_final/summary_by_model.csv, kind: csv, selector: {filter: {model: Trimmed}, column: QLIKE_rel_HAR}, value: 0.732, decimals: 3, tol: 0.0005}
+  - {id: t_dev_QLIKEComb, file: results/dev/summary_by_model.csv, kind: csv, selector: {filter: {model: QLIKEComb}, column: QLIKE_rel_HAR}, value: 0.916, decimals: 3, tol: 0.0005}
+  - {id: t_final_QLIKEComb, file: results/final/summary_by_model.csv, kind: csv, selector: {filter: {model: QLIKEComb}, column: QLIKE_rel_HAR}, value: 0.805, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_dev_QLIKEComb, file: results/crypto_dev/summary_by_model.csv, kind: csv, selector: {filter: {model: QLIKEComb}, column: QLIKE_rel_HAR}, value: 0.707, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_final_QLIKEComb, file: results/crypto_final/summary_by_model.csv, kind: csv, selector: {filter: {model: QLIKEComb}, column: QLIKE_rel_HAR}, value: 0.752, decimals: 3, tol: 0.0005}
+  - {id: t_dev_BestPrior, file: results/dev/summary_by_model.csv, kind: csv, selector: {filter: {model: BestPrior}, column: QLIKE_rel_HAR}, value: 0.942, decimals: 3, tol: 0.0005}
+  - {id: t_final_BestPrior, file: results/final/summary_by_model.csv, kind: csv, selector: {filter: {model: BestPrior}, column: QLIKE_rel_HAR}, value: 0.820, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_dev_BestPrior, file: results/crypto_dev/summary_by_model.csv, kind: csv, selector: {filter: {model: BestPrior}, column: QLIKE_rel_HAR}, value: 0.719, decimals: 3, tol: 0.0005}
+  - {id: t_crypto_final_BestPrior, file: results/crypto_final/summary_by_model.csv, kind: csv, selector: {filter: {model: BestPrior}, column: QLIKE_rel_HAR}, value: 0.810, decimals: 3, tol: 0.0005}
+  - {id: pg_best_final, file: results/final/comparison.csv, kind: csv, selector: {filter: {asset: PG, model: BestPrior}, column: QLIKE_rel_HAR}, value: 0.926, decimals: 3, tol: 0.0005}
+  - {id: pg_ew_final, file: results/final/comparison.csv, kind: csv, selector: {filter: {asset: PG, model: EqualWeight}, column: QLIKE_rel_HAR}, value: 0.819, decimals: 3, tol: 0.0005}
+  - {id: p_cf_target_scale, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: target_scale}, column: diff}, value: -0.1244, decimals: 4, tol: 0.00005}
+  - {id: p_cf_target_scale_lo, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: target_scale}, column: diff_lo}, value: -0.1887, decimals: 4, tol: 0.00005}
+  - {id: p_cf_target_scale_hi, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: target_scale}, column: diff_hi}, value: -0.0471, decimals: 4, tol: 0.00005}
+  - {id: p_sf_target_scale, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: target_scale}, column: diff}, value: -0.0172, decimals: 4, tol: 0.00005}
+  - {id: p_sf_target_scale_lo, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: target_scale}, column: diff_lo}, value: -0.0233, decimals: 4, tol: 0.00005}
+  - {id: p_sf_target_scale_hi, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: target_scale}, column: diff_hi}, value: -0.0079, decimals: 4, tol: 0.00005}
+  - {id: p_cf_features, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: features}, column: diff}, value: 0.024, decimals: 4, tol: 0.00005}
+  - {id: p_cf_features_lo, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: features}, column: diff_lo}, value: -0.0203, decimals: 4, tol: 0.00005}
+  - {id: p_cf_features_hi, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: features}, column: diff_hi}, value: 0.109, decimals: 4, tol: 0.00005}
+  - {id: p_sf_features, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: features}, column: diff}, value: -0.0265, decimals: 4, tol: 0.00005}
+  - {id: p_sf_features_lo, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: features}, column: diff_lo}, value: -0.0387, decimals: 4, tol: 0.00005}
+  - {id: p_sf_features_hi, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: features}, column: diff_hi}, value: -0.0174, decimals: 4, tol: 0.00005}
+  - {id: p_cf_pooling_NN, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: pooling_NN}, column: diff}, value: -0.0314, decimals: 4, tol: 0.00005}
+  - {id: p_cf_pooling_NN_lo, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: pooling_NN}, column: diff_lo}, value: -0.0943, decimals: 4, tol: 0.00005}
+  - {id: p_cf_pooling_NN_hi, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: pooling_NN}, column: diff_hi}, value: 0.0024, decimals: 4, tol: 0.00005}
+  - {id: p_sf_pooling_NN, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: pooling_NN}, column: diff}, value: -0.0017, decimals: 4, tol: 0.00005}
+  - {id: p_sf_pooling_NN_lo, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: pooling_NN}, column: diff_lo}, value: -0.0055, decimals: 4, tol: 0.00005}
+  - {id: p_sf_pooling_NN_hi, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: pooling_NN}, column: diff_hi}, value: 0.0027, decimals: 4, tol: 0.00005}
+  - {id: p_cf_averaging_vs_members, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: averaging_vs_members}, column: diff}, value: -0.0366, decimals: 4, tol: 0.00005}
+  - {id: p_cf_averaging_vs_members_lo, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: averaging_vs_members}, column: diff_lo}, value: -0.0721, decimals: 4, tol: 0.00005}
+  - {id: p_cf_averaging_vs_members_hi, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: averaging_vs_members}, column: diff_hi}, value: -0.0158, decimals: 4, tol: 0.00005}
+  - {id: p_sf_averaging_vs_members, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: averaging_vs_members}, column: diff}, value: -0.0078, decimals: 4, tol: 0.00005}
+  - {id: p_sf_averaging_vs_members_lo, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: averaging_vs_members}, column: diff_lo}, value: -0.0091, decimals: 4, tol: 0.00005}
+  - {id: p_sf_averaging_vs_members_hi, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: averaging_vs_members}, column: diff_hi}, value: -0.0067, decimals: 4, tol: 0.00005}
+  - {id: p_cf_averaging_vs_selection, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: averaging_vs_selection}, column: diff}, value: -0.0253, decimals: 4, tol: 0.00005}
+  - {id: p_cf_averaging_vs_selection_lo, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: averaging_vs_selection}, column: diff_lo}, value: -0.1168, decimals: 4, tol: 0.00005}
+  - {id: p_cf_averaging_vs_selection_hi, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: averaging_vs_selection}, column: diff_hi}, value: 0.0262, decimals: 4, tol: 0.00005}
+  - {id: p_sf_averaging_vs_selection, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: averaging_vs_selection}, column: diff}, value: -0.0031, decimals: 4, tol: 0.00005}
+  - {id: p_sf_averaging_vs_selection_lo, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: averaging_vs_selection}, column: diff_lo}, value: -0.0086, decimals: 4, tol: 0.00005}
+  - {id: p_sf_averaging_vs_selection_hi, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: averaging_vs_selection}, column: diff_hi}, value: 0.0004, decimals: 4, tol: 0.00005}
+  - {id: p_cf_protection_drop_HAR, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: protection_drop_HAR}, column: diff}, value: -0.0119, decimals: 4, tol: 0.00005}
+  - {id: p_cf_protection_drop_HAR_lo, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: protection_drop_HAR}, column: diff_lo}, value: -0.0281, decimals: 4, tol: 0.00005}
+  - {id: p_cf_protection_drop_HAR_hi, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: protection_drop_HAR}, column: diff_hi}, value: 0.0071, decimals: 4, tol: 0.00005}
+  - {id: p_sf_protection_drop_HAR, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: protection_drop_HAR}, column: diff}, value: -0.0039, decimals: 4, tol: 0.00005}
+  - {id: p_sf_protection_drop_HAR_lo, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: protection_drop_HAR}, column: diff_lo}, value: -0.0061, decimals: 4, tol: 0.00005}
+  - {id: p_sf_protection_drop_HAR_hi, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: protection_drop_HAR}, column: diff_hi}, value: -0.0016, decimals: 4, tol: 0.00005}
+  - {id: p_cf_context_pooled_NN, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: context_pooled_NN}, column: diff}, value: 0.0121, decimals: 4, tol: 0.00005}
+  - {id: p_cf_context_pooled_NN_lo, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: context_pooled_NN}, column: diff_lo}, value: -0.0159, decimals: 4, tol: 0.00005}
+  - {id: p_cf_context_pooled_NN_hi, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: context_pooled_NN}, column: diff_hi}, value: 0.0326, decimals: 4, tol: 0.00005}
+  - {id: p_sf_context_pooled_NN, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: context_pooled_NN}, column: diff}, value: 0.0048, decimals: 4, tol: 0.00005}
+  - {id: p_sf_context_pooled_NN_lo, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: context_pooled_NN}, column: diff_lo}, value: 0.0018, decimals: 4, tol: 0.00005}
+  - {id: p_sf_context_pooled_NN_hi, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: context_pooled_NN}, column: diff_hi}, value: 0.0072, decimals: 4, tol: 0.00005}
+  - {id: p_cf_context_logHAR, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: context_logHAR}, column: diff}, value: -0.0098, decimals: 4, tol: 0.00005}
+  - {id: p_cf_context_logHAR_lo, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: context_logHAR}, column: diff_lo}, value: -0.0383, decimals: 4, tol: 0.00005}
+  - {id: p_cf_context_logHAR_hi, file: results/crypto_final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: context_logHAR}, column: diff_hi}, value: 0.0151, decimals: 4, tol: 0.00005}
+  - {id: p_sf_context_logHAR, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: context_logHAR}, column: diff}, value: -0.0242, decimals: 4, tol: 0.00005}
+  - {id: p_sf_context_logHAR_lo, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: context_logHAR}, column: diff_lo}, value: -0.0375, decimals: 4, tol: 0.00005}
+  - {id: p_sf_context_logHAR_hi, file: results/final/paired_losses.csv, kind: csv, selector: {filter: {sample: all, contrast: context_logHAR}, column: diff_hi}, value: -0.0159, decimals: 4, tol: 0.00005}
+  - {id: g21_max_change_final, file: results/g21_vs_g2.json, kind: json, selector: modes.final.max_abs_change_mean_rel_qlike, value: 0.0016, decimals: 4, tol: 0.00005}

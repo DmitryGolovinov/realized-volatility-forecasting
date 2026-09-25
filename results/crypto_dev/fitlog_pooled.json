@@ -1,0 +1,62 @@
+[
+ {
+  "origin": 1000,
+  "model": "logHAR_pooled",
+  "seconds": 0.006568291981238872
+ },
+ {
+  "origin": 1000,
+  "model": "RF_pooled",
+  "seconds": 5.675294000015128
+ },
+ {
+  "origin": 1000,
+  "model": "NN_pooled",
+  "seconds": 1.4476200829958543
+ },
+ {
+  "origin": 1252,
+  "model": "logHAR_pooled",
+  "seconds": 0.0066310829715803266
+ },
+ {
+  "origin": 1252,
+  "model": "RF_pooled",
+  "seconds": 6.789139917003922
+ },
+ {
+  "origin": 1252,
+  "model": "NN_pooled",
+  "seconds": 2.1153409170219675
+ },
+ {
+  "origin": 1504,
+  "model": "logHAR_pooled",
+  "seconds": 0.0023779580369591713
+ },
+ {
+  "origin": 1504,
+  "model": "RF_pooled",
+  "seconds": 7.934786166995764
+ },
+ {
+  "origin": 1504,
+  "model": "NN_pooled",
+  "seconds": 3.176093582995236
+ },
+ {
+  "origin": 1756,
+  "model": "logHAR_pooled",
+  "seconds": 0.0024019170086830854
+ },
+ {
+  "origin": 1756,
+  "model": "RF_pooled",
+  "seconds": 9.861555417010095
+ },
+ {
+  "origin": 1756,
+  "model": "NN_pooled",
+  "seconds": 4.423884666990489
+ }
+]

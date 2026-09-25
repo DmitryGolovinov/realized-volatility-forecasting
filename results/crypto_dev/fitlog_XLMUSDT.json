@@ -1,0 +1,406 @@
+[
+ {
+  "origin": 1000,
+  "model": "HAR",
+  "train_rows": [
+   21,
+   999
+  ],
+  "inner_val_rows": [
+   804,
+   999
+  ],
+  "smear": 1.0,
+  "floor": 8.260317882547406e-05,
+  "seconds": 0.0010846250224858522
+ },
+ {
+  "origin": 1000,
+  "model": "logHAR",
+  "train_rows": [
+   21,
+   999
+  ],
+  "inner_val_rows": [
+   804,
+   999
+  ],
+  "smear": 1.4118710447353304,
+  "floor": 8.260317882547406e-05,
+  "seconds": 0.0006310409517027438
+ },
+ {
+  "origin": 1000,
+  "model": "HARX",
+  "train_rows": [
+   21,
+   999
+  ],
+  "inner_val_rows": [
+   804,
+   999
+  ],
+  "smear": 1.5631332516860696,
+  "floor": 8.260317882547406e-05,
+  "seconds": 0.0008971659699454904
+ },
+ {
+  "origin": 1000,
+  "model": "RF",
+  "train_rows": [
+   21,
+   999
+  ],
+  "inner_val_rows": [
+   804,
+   999
+  ],
+  "smear": 1.4644789016077566,
+  "floor": 8.260317882547406e-05,
+  "seconds": 1.2123555410071276,
+  "min_samples_leaf": 20,
+  "max_depth": 8
+ },
+ {
+  "origin": 1000,
+  "model": "NN",
+  "train_rows": [
+   21,
+   999
+  ],
+  "inner_val_rows": [
+   804,
+   999
+  ],
+  "smear": 1.9689590847908203,
+  "floor": 8.260317882547406e-05,
+  "seconds": 0.3313483329839073,
+  "epochs": [
+   19,
+   80,
+   47
+  ]
+ },
+ {
+  "origin": 1000,
+  "model": "LSTM",
+  "train_rows": [
+   21,
+   999
+  ],
+  "inner_val_rows": [
+   804,
+   999
+  ],
+  "smear": 1.4718688292754107,
+  "floor": 8.260317882547406e-05,
+  "seconds": 3.6988384579890408,
+  "epochs": [
+   49,
+   47
+  ]
+ },
+ {
+  "origin": 1252,
+  "model": "HAR",
+  "train_rows": [
+   21,
+   1251
+  ],
+  "inner_val_rows": [
+   1006,
+   1251
+  ],
+  "smear": 1.0,
+  "floor": 8.260317882547406e-05,
+  "seconds": 0.0006475839763879776
+ },
+ {
+  "origin": 1252,
+  "model": "logHAR",
+  "train_rows": [
+   21,
+   1251
+  ],
+  "inner_val_rows": [
+   1006,
+   1251
+  ],
+  "smear": 1.210511550847341,
+  "floor": 8.260317882547406e-05,
+  "seconds": 0.0007562079699710011
+ },
+ {
+  "origin": 1252,
+  "model": "HARX",
+  "train_rows": [
+   21,
+   1251
+  ],
+  "inner_val_rows": [
+   1006,
+   1251
+  ],
+  "smear": 1.2373443870030807,
+  "floor": 8.260317882547406e-05,
+  "seconds": 0.0012019579880870879
+ },
+ {
+  "origin": 1252,
+  "model": "RF",
+  "train_rows": [
+   21,
+   1251
+  ],
+  "inner_val_rows": [
+   1006,
+   1251
+  ],
+  "smear": 1.2145536624484847,
+  "floor": 8.260317882547406e-05,
+  "seconds": 1.4732718750019558,
+  "min_samples_leaf": 5,
+  "max_depth": null
+ },
+ {
+  "origin": 1252,
+  "model": "NN",
+  "train_rows": [
+   21,
+   1251
+  ],
+  "inner_val_rows": [
+   1006,
+   1251
+  ],
+  "smear": 1.2038909665372588,
+  "floor": 8.260317882547406e-05,
+  "seconds": 0.4889417910017073,
+  "epochs": [
+   28,
+   129,
+   28
+  ]
+ },
+ {
+  "origin": 1252,
+  "model": "LSTM",
+  "train_rows": [
+   21,
+   1251
+  ],
+  "inner_val_rows": [
+   1006,
+   1251
+  ],
+  "smear": 1.2292626689514956,
+  "floor": 8.260317882547406e-05,
+  "seconds": 9.968396291951649,
+  "epochs": [
+   100,
+   100
+  ]
+ },
+ {
+  "origin": 1504,
+  "model": "HAR",
+  "train_rows": [
+   21,
+   1503
+  ],
+  "inner_val_rows": [
+   1207,
+   1503
+  ],
+  "smear": 1.0,
+  "floor": 8.260317882547406e-05,
+  "seconds": 0.0006206249818205833
+ },
+ {
+  "origin": 1504,
+  "model": "logHAR",
+  "train_rows": [
+   21,
+   1503
+  ],
+  "inner_val_rows": [
+   1207,
+   1503
+  ],
+  "smear": 1.1054670501516892,
+  "floor": 8.260317882547406e-05,
+  "seconds": 0.00043291697511449456
+ },
+ {
+  "origin": 1504,
+  "model": "HARX",
+  "train_rows": [
+   21,
+   1503
+  ],
+  "inner_val_rows": [
+   1207,
+   1503
+  ],
+  "smear": 1.136244968090913,
+  "floor": 8.260317882547406e-05,
+  "seconds": 0.000543709029443562
+ },
+ {
+  "origin": 1504,
+  "model": "RF",
+  "train_rows": [
+   21,
+   1503
+  ],
+  "inner_val_rows": [
+   1207,
+   1503
+  ],
+  "smear": 1.0721771023629423,
+  "floor": 8.260317882547406e-05,
+  "seconds": 1.6533657080144621,
+  "min_samples_leaf": 5,
+  "max_depth": 8
+ },
+ {
+  "origin": 1504,
+  "model": "NN",
+  "train_rows": [
+   21,
+   1503
+  ],
+  "inner_val_rows": [
+   1207,
+   1503
+  ],
+  "smear": 1.1195092865147627,
+  "floor": 8.260317882547406e-05,
+  "seconds": 0.7896972090238705,
+  "epochs": [
+   41,
+   54,
+   94
+  ]
+ },
+ {
+  "origin": 1504,
+  "model": "LSTM",
+  "train_rows": [
+   21,
+   1503
+  ],
+  "inner_val_rows": [
+   1207,
+   1503
+  ],
+  "smear": 1.1135320677136922,
+  "floor": 8.260317882547406e-05,
+  "seconds": 5.977808084047865,
+  "epochs": [
+   51,
+   49
+  ]
+ },
+ {
+  "origin": 1756,
+  "model": "HAR",
+  "train_rows": [
+   21,
+   1755
+  ],
+  "inner_val_rows": [
+   1409,
+   1755
+  ],
+  "smear": 1.0,
+  "floor": 8.260317882547406e-05,
+  "seconds": 0.00041766598587855697
+ },
+ {
+  "origin": 1756,
+  "model": "logHAR",
+  "train_rows": [
+   21,
+   1755
+  ],
+  "inner_val_rows": [
+   1409,
+   1755
+  ],
+  "smear": 1.053684640592374,
+  "floor": 8.260317882547406e-05,
+  "seconds": 0.0004117499920539558
+ },
+ {
+  "origin": 1756,
+  "model": "HARX",
+  "train_rows": [
+   21,
+   1755
+  ],
+  "inner_val_rows": [
+   1409,
+   1755
+  ],
+  "smear": 1.022468996159255,
+  "floor": 8.260317882547406e-05,
+  "seconds": 0.0005438749794848263
+ },
+ {
+  "origin": 1756,
+  "model": "RF",
+  "train_rows": [
+   21,
+   1755
+  ],
+  "inner_val_rows": [
+   1409,
+   1755
+  ],
+  "smear": 0.9719643687528692,
+  "floor": 8.260317882547406e-05,
+  "seconds": 1.7962348749861121,
+  "min_samples_leaf": 5,
+  "max_depth": null
+ },
+ {
+  "origin": 1756,
+  "model": "NN",
+  "train_rows": [
+   21,
+   1755
+  ],
+  "inner_val_rows": [
+   1409,
+   1755
+  ],
+  "smear": 0.997493891899351,
+  "floor": 8.260317882547406e-05,
+  "seconds": 0.940132999967318,
+  "epochs": [
+   77,
+   65,
+   83
+  ]
+ },
+ {
+  "origin": 1756,
+  "model": "LSTM",
+  "train_rows": [
+   21,
+   1755
+  ],
+  "inner_val_rows": [
+   1409,
+   1755
+  ],
+  "smear": 1.004145416611584,
+  "floor": 8.260317882547406e-05,
+  "seconds": 5.44644154200796,
+  "epochs": [
+   72,
+   51
+  ]
+ }
+]

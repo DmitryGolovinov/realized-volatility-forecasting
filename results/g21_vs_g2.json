@@ -1,0 +1,69 @@
+{
+ "source_tree_sha256": "b0a61ff813e603fcdd6d5e881c08ea2f3eeefa5576789b0a2b0213bc32fe8552",
+ "modes": {
+  "dev": {
+   "max_abs_change_mean_rel_qlike": 0.0015342329426617507,
+   "model_with_max_change": "BestPrior",
+   "mean_rel_qlike_change": {
+    "HAR": 0.0,
+    "logHAR": 0.0,
+    "HARX": -8.48508093942435e-06,
+    "RF": -0.0012338633498565343,
+    "NN": -0.0009289360379635125,
+    "LSTM": 3.065859072171051e-07,
+    "EqualWeight": -0.000256838583960306,
+    "QLIKEComb": 0.000700715669652241,
+    "BestPrior": -0.0015342329426617507,
+    "logHAR_pooled": 0.0,
+    "RF_pooled": -0.00017860086587107027,
+    "NN_pooled": 0.00024944025877815523,
+    "Median": -0.0002381306091681079,
+    "Trimmed": -0.0005314914034557638,
+    "EW_wo_HAR": -0.0005148517454989232,
+    "EW_wo_HARX": -0.00029826023442092175,
+    "EW_wo_RF": -9.96377716747654e-05,
+    "EW_wo_NN": -0.00019833369972566128,
+    "EW_wo_LSTM": -0.00030048015343531187
+   },
+   "max_abs_change_paired_diff": 0.0006051533825655996,
+   "contrasts_with_changed_verdict": [],
+   "sign_changes": 0,
+   "inputs_sha256": {
+    "results/crypto_dev/paired_losses.csv": "bd8868fc63ce0be3a40ec7346ef13a5d7ef17e75f96d73e3ab1805221413d221",
+    "results/crypto_g21_dev/paired_losses.csv": "3fc9d78a9fc450b0d93508e08a8b81348f407c24d93dadb5d9dee8c4458487e4"
+   }
+  },
+  "final": {
+   "max_abs_change_mean_rel_qlike": 0.0016398221557746284,
+   "model_with_max_change": "RF_pooled",
+   "mean_rel_qlike_change": {
+    "HAR": 0.0,
+    "logHAR": 0.0,
+    "HARX": -4.068080210140046e-06,
+    "RF": 0.0003597295847674875,
+    "NN": -0.001389417623764988,
+    "LSTM": 2.1532784160838148e-05,
+    "EqualWeight": -4.607410865209438e-05,
+    "QLIKEComb": 5.0904148007902e-07,
+    "BestPrior": -0.0005811779449543808,
+    "logHAR_pooled": 0.0,
+    "RF_pooled": -0.0016398221557746284,
+    "NN_pooled": 0.00010733577371668801,
+    "Median": -0.0005955832099896474,
+    "Trimmed": 3.2479957065789655e-05,
+    "EW_wo_HAR": -8.889461439831603e-05,
+    "EW_wo_HARX": -7.612782167942811e-05,
+    "EW_wo_RF": -5.592377137331184e-05,
+    "EW_wo_NN": 5.377189399680127e-05,
+    "EW_wo_LSTM": -6.690926075736403e-05
+   },
+   "max_abs_change_paired_diff": 0.0008065258371107,
+   "contrasts_with_changed_verdict": [],
+   "sign_changes": 0,
+   "inputs_sha256": {
+    "results/crypto_final/paired_losses.csv": "8e91b5918e0201f0c8fd1435a05925ece32aa0ce88aafd4d7b08b1db1a6521b7",
+    "results/crypto_g21_final/paired_losses.csv": "4d69fd582708f76c3d631aceb584587f4c45e4d79357199f1864b936bb18cdd2"
+   }
+  }
+ }
+}

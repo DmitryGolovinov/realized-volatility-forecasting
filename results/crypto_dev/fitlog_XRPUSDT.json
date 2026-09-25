@@ -1,0 +1,406 @@
+[
+ {
+  "origin": 1000,
+  "model": "HAR",
+  "train_rows": [
+   21,
+   999
+  ],
+  "inner_val_rows": [
+   804,
+   999
+  ],
+  "smear": 1.0,
+  "floor": 8.182196790713411e-05,
+  "seconds": 0.0006927919457666576
+ },
+ {
+  "origin": 1000,
+  "model": "logHAR",
+  "train_rows": [
+   21,
+   999
+  ],
+  "inner_val_rows": [
+   804,
+   999
+  ],
+  "smear": 1.5529891530368187,
+  "floor": 8.182196790713411e-05,
+  "seconds": 0.0012997080339118838
+ },
+ {
+  "origin": 1000,
+  "model": "HARX",
+  "train_rows": [
+   21,
+   999
+  ],
+  "inner_val_rows": [
+   804,
+   999
+  ],
+  "smear": 1.6002325184815267,
+  "floor": 8.182196790713411e-05,
+  "seconds": 0.0014394589816220105
+ },
+ {
+  "origin": 1000,
+  "model": "RF",
+  "train_rows": [
+   21,
+   999
+  ],
+  "inner_val_rows": [
+   804,
+   999
+  ],
+  "smear": 1.5668435212501524,
+  "floor": 8.182196790713411e-05,
+  "seconds": 1.3433880410157144,
+  "min_samples_leaf": 20,
+  "max_depth": 8
+ },
+ {
+  "origin": 1000,
+  "model": "NN",
+  "train_rows": [
+   21,
+   999
+  ],
+  "inner_val_rows": [
+   804,
+   999
+  ],
+  "smear": 1.4890652230256518,
+  "floor": 8.182196790713411e-05,
+  "seconds": 0.35235520801506937,
+  "epochs": [
+   54,
+   73,
+   66
+  ]
+ },
+ {
+  "origin": 1000,
+  "model": "LSTM",
+  "train_rows": [
+   21,
+   999
+  ],
+  "inner_val_rows": [
+   804,
+   999
+  ],
+  "smear": 1.4820111287616098,
+  "floor": 8.182196790713411e-05,
+  "seconds": 3.102370082982816,
+  "epochs": [
+   59,
+   46
+  ]
+ },
+ {
+  "origin": 1252,
+  "model": "HAR",
+  "train_rows": [
+   21,
+   1251
+  ],
+  "inner_val_rows": [
+   1006,
+   1251
+  ],
+  "smear": 1.0,
+  "floor": 8.182196790713411e-05,
+  "seconds": 0.0005872090114280581
+ },
+ {
+  "origin": 1252,
+  "model": "logHAR",
+  "train_rows": [
+   21,
+   1251
+  ],
+  "inner_val_rows": [
+   1006,
+   1251
+  ],
+  "smear": 1.3563202564102652,
+  "floor": 8.182196790713411e-05,
+  "seconds": 0.0004098750068806112
+ },
+ {
+  "origin": 1252,
+  "model": "HARX",
+  "train_rows": [
+   21,
+   1251
+  ],
+  "inner_val_rows": [
+   1006,
+   1251
+  ],
+  "smear": 1.3854372362978393,
+  "floor": 8.182196790713411e-05,
+  "seconds": 0.0005677919834852219
+ },
+ {
+  "origin": 1252,
+  "model": "RF",
+  "train_rows": [
+   21,
+   1251
+  ],
+  "inner_val_rows": [
+   1006,
+   1251
+  ],
+  "smear": 1.394750434634238,
+  "floor": 8.182196790713411e-05,
+  "seconds": 1.187619625008665,
+  "min_samples_leaf": 20,
+  "max_depth": 8
+ },
+ {
+  "origin": 1252,
+  "model": "NN",
+  "train_rows": [
+   21,
+   1251
+  ],
+  "inner_val_rows": [
+   1006,
+   1251
+  ],
+  "smear": 1.38519509842019,
+  "floor": 8.182196790713411e-05,
+  "seconds": 0.5040392499649897,
+  "epochs": [
+   28,
+   101,
+   56
+  ]
+ },
+ {
+  "origin": 1252,
+  "model": "LSTM",
+  "train_rows": [
+   21,
+   1251
+  ],
+  "inner_val_rows": [
+   1006,
+   1251
+  ],
+  "smear": 1.38671706918472,
+  "floor": 8.182196790713411e-05,
+  "seconds": 8.937731459038332,
+  "epochs": [
+   100,
+   98
+  ]
+ },
+ {
+  "origin": 1504,
+  "model": "HAR",
+  "train_rows": [
+   21,
+   1503
+  ],
+  "inner_val_rows": [
+   1207,
+   1503
+  ],
+  "smear": 1.0,
+  "floor": 8.182196790713411e-05,
+  "seconds": 0.0007890000124461949
+ },
+ {
+  "origin": 1504,
+  "model": "logHAR",
+  "train_rows": [
+   21,
+   1503
+  ],
+  "inner_val_rows": [
+   1207,
+   1503
+  ],
+  "smear": 1.2526426197022702,
+  "floor": 8.182196790713411e-05,
+  "seconds": 0.0008199170115403831
+ },
+ {
+  "origin": 1504,
+  "model": "HARX",
+  "train_rows": [
+   21,
+   1503
+  ],
+  "inner_val_rows": [
+   1207,
+   1503
+  ],
+  "smear": 1.2839643145384476,
+  "floor": 8.182196790713411e-05,
+  "seconds": 0.001073499966878444
+ },
+ {
+  "origin": 1504,
+  "model": "RF",
+  "train_rows": [
+   21,
+   1503
+  ],
+  "inner_val_rows": [
+   1207,
+   1503
+  ],
+  "smear": 1.2470428830957696,
+  "floor": 8.182196790713411e-05,
+  "seconds": 1.5324873329955153,
+  "min_samples_leaf": 20,
+  "max_depth": null
+ },
+ {
+  "origin": 1504,
+  "model": "NN",
+  "train_rows": [
+   21,
+   1503
+  ],
+  "inner_val_rows": [
+   1207,
+   1503
+  ],
+  "smear": 1.2857745752575478,
+  "floor": 8.182196790713411e-05,
+  "seconds": 0.7530069170170464,
+  "epochs": [
+   93,
+   66,
+   65
+  ]
+ },
+ {
+  "origin": 1504,
+  "model": "LSTM",
+  "train_rows": [
+   21,
+   1503
+  ],
+  "inner_val_rows": [
+   1207,
+   1503
+  ],
+  "smear": 1.273930089133468,
+  "floor": 8.182196790713411e-05,
+  "seconds": 4.080850125057623,
+  "epochs": [
+   33,
+   36
+  ]
+ },
+ {
+  "origin": 1756,
+  "model": "HAR",
+  "train_rows": [
+   21,
+   1755
+  ],
+  "inner_val_rows": [
+   1409,
+   1755
+  ],
+  "smear": 1.0,
+  "floor": 6.685490868553321e-05,
+  "seconds": 0.00034479197347536683
+ },
+ {
+  "origin": 1756,
+  "model": "logHAR",
+  "train_rows": [
+   21,
+   1755
+  ],
+  "inner_val_rows": [
+   1409,
+   1755
+  ],
+  "smear": 1.186928682439752,
+  "floor": 6.685490868553321e-05,
+  "seconds": 0.00042804196709766984
+ },
+ {
+  "origin": 1756,
+  "model": "HARX",
+  "train_rows": [
+   21,
+   1755
+  ],
+  "inner_val_rows": [
+   1409,
+   1755
+  ],
+  "smear": 1.184580307510098,
+  "floor": 6.685490868553321e-05,
+  "seconds": 0.0005991250509396195
+ },
+ {
+  "origin": 1756,
+  "model": "RF",
+  "train_rows": [
+   21,
+   1755
+  ],
+  "inner_val_rows": [
+   1409,
+   1755
+  ],
+  "smear": 1.11451956224373,
+  "floor": 6.685490868553321e-05,
+  "seconds": 1.644355166994501,
+  "min_samples_leaf": 5,
+  "max_depth": 8
+ },
+ {
+  "origin": 1756,
+  "model": "NN",
+  "train_rows": [
+   21,
+   1755
+  ],
+  "inner_val_rows": [
+   1409,
+   1755
+  ],
+  "smear": 1.1705522953759864,
+  "floor": 6.685490868553321e-05,
+  "seconds": 1.7744306669919752,
+  "epochs": [
+   102,
+   127,
+   136
+  ]
+ },
+ {
+  "origin": 1756,
+  "model": "LSTM",
+  "train_rows": [
+   21,
+   1755
+  ],
+  "inner_val_rows": [
+   1409,
+   1755
+  ],
+  "smear": 1.1410219286674383,
+  "floor": 6.685490868553321e-05,
+  "seconds": 5.338736750010867,
+  "epochs": [
+   23,
+   60
+  ]
+ }
+]

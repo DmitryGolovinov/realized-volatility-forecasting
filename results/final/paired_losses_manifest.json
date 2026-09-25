@@ -1,0 +1,42 @@
+{
+ "assets": [
+  "AAPL",
+  "BA",
+  "IBM",
+  "JPM",
+  "PG"
+ ],
+ "bootstrap": {
+  "block_dates": 20,
+  "joint_over_assets": true,
+  "n_boot": 2000,
+  "seed": 0
+ },
+ "command": "python scripts/paired_losses.py final",
+ "evaluation_first_row": 3405,
+ "evaluation_last_row": 4255,
+ "forecast_files_sha256": {
+  "AAPL": "26a070e536c523ec80a9596ef69462ffd82315f312b09cf5e57ec0e044d4e329",
+  "BA": "d0d8799e4383a8a7b3ae27a60d825e02bb64c0f224d53fa592f2739698f6e9d8",
+  "IBM": "91bb791e482830e33ea030fae576301050fe9311d3149e0464ba59ba9a0b8b5d",
+  "JPM": "cdb40293c4d8878adfd2d9efdcccdcfb45c4c1e38655a9f63ce0543b21c25cf0",
+  "PG": "6163e86374aacb642aeb8df91c3c33a4aa8ed96b8af2aa70fd1beb454d3165ff"
+ },
+ "hac_lags": 5,
+ "max_rel_diff_vs_comparison_csv": 5.618010229421428e-16,
+ "outputs": {
+  "model_losses.csv": "3b8b8bc1f59b121ad8d126bd1905856ed300baeaed552d9d2a8c221cdb0bb764",
+  "paired_losses.csv": "7a9469117f6d34ebacea696965df75e6bb1fc7b36c94cde60bc447b1e3ce9bd1"
+ },
+ "run": "final",
+ "run_manifest_sha256": "dfb9bba5bd55917d7d37ef01e18bc09a71b7fd60eaa21e7ca357501aada080b1",
+ "samples": {
+  "all": {
+   "dates": 851,
+   "dates_excluded": 0
+  }
+ },
+ "source_tree_sha256": "b0a61ff813e603fcdd6d5e881c08ea2f3eeefa5576789b0a2b0213bc32fe8552",
+ "study": "realized-volatility-forecasting / raw paired losses (joint date bootstrap)",
+ "written_utc": "2026-09-25T01:52:30Z"
+}

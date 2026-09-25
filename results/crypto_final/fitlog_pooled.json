@@ -1,0 +1,122 @@
+[
+ {
+  "origin": 1000,
+  "model": "logHAR_pooled",
+  "seconds": 0.0028761670109815896
+ },
+ {
+  "origin": 1000,
+  "model": "RF_pooled",
+  "seconds": 4.474000125017483
+ },
+ {
+  "origin": 1000,
+  "model": "NN_pooled",
+  "seconds": 0.7795913750305772
+ },
+ {
+  "origin": 1252,
+  "model": "logHAR_pooled",
+  "seconds": 0.0029627089970745146
+ },
+ {
+  "origin": 1252,
+  "model": "RF_pooled",
+  "seconds": 5.695926834014244
+ },
+ {
+  "origin": 1252,
+  "model": "NN_pooled",
+  "seconds": 1.5073872919892892
+ },
+ {
+  "origin": 1504,
+  "model": "logHAR_pooled",
+  "seconds": 0.0020440410007722676
+ },
+ {
+  "origin": 1504,
+  "model": "RF_pooled",
+  "seconds": 6.8469985839910805
+ },
+ {
+  "origin": 1504,
+  "model": "NN_pooled",
+  "seconds": 2.593887833005283
+ },
+ {
+  "origin": 1756,
+  "model": "logHAR_pooled",
+  "seconds": 0.0023995829978957772
+ },
+ {
+  "origin": 1756,
+  "model": "RF_pooled",
+  "seconds": 8.64697637502104
+ },
+ {
+  "origin": 1756,
+  "model": "NN_pooled",
+  "seconds": 3.492624500009697
+ },
+ {
+  "origin": 2008,
+  "model": "logHAR_pooled",
+  "seconds": 0.0021046659676358104
+ },
+ {
+  "origin": 2008,
+  "model": "RF_pooled",
+  "seconds": 10.436862708011176
+ },
+ {
+  "origin": 2008,
+  "model": "NN_pooled",
+  "seconds": 3.0308783749933355
+ },
+ {
+  "origin": 2260,
+  "model": "logHAR_pooled",
+  "seconds": 0.0032792919664643705
+ },
+ {
+  "origin": 2260,
+  "model": "RF_pooled",
+  "seconds": 11.516042667033616
+ },
+ {
+  "origin": 2260,
+  "model": "NN_pooled",
+  "seconds": 4.9445038749836385
+ },
+ {
+  "origin": 2512,
+  "model": "logHAR_pooled",
+  "seconds": 0.003258791984990239
+ },
+ {
+  "origin": 2512,
+  "model": "RF_pooled",
+  "seconds": 12.898550583049655
+ },
+ {
+  "origin": 2512,
+  "model": "NN_pooled",
+  "seconds": 3.23396933299955
+ },
+ {
+  "origin": 2764,
+  "model": "logHAR_pooled",
+  "seconds": 0.0031212500180117786
+ },
+ {
+  "origin": 2764,
+  "model": "RF_pooled",
+  "seconds": 14.61791924998397
+ },
+ {
+  "origin": 2764,
+  "model": "NN_pooled",
+  "seconds": 3.804274959024042
+ }
+]

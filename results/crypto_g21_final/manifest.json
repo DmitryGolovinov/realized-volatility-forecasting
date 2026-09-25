@@ -1,0 +1,95 @@
+{
+ "assets": [
+  "BTCUSDT",
+  "ETHUSDT",
+  "BNBUSDT",
+  "XRPUSDT",
+  "ADAUSDT",
+  "LTCUSDT",
+  "TRXUSDT",
+  "XLMUSDT"
+ ],
+ "command": "python scripts/run_crypto.py --mode final --panel crypto_g21",
+ "config_sha256": "4ed99606705e6caede763f64a6a0e1dcc168f226a7c347f3f3ba9fe75fad8cbd",
+ "data_manifest_sha256": "2855373e1a43f948392bde106f89f422ee1208f3e5a37a7e27e5dc70e700b6af",
+ "environment": {
+  "machine": "arm64",
+  "packages": {
+   "numpy": "2.4.6",
+   "pandas": "3.0.6",
+   "scikit-learn": "1.9.1",
+   "torch": "2.14.0"
+  },
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "processor": "arm",
+  "python": "3.11.3"
+ },
+ "evaluation": {
+  "ADAUSDT": {
+   "first_date": "2024-01-01 00:00:00",
+   "first_row": 1826,
+   "last_date": "2026-08-30 00:00:00",
+   "last_row": 2798
+  },
+  "BNBUSDT": {
+   "first_date": "2024-01-01 00:00:00",
+   "first_row": 1826,
+   "last_date": "2026-08-30 00:00:00",
+   "last_row": 2798
+  },
+  "BTCUSDT": {
+   "first_date": "2024-01-01 00:00:00",
+   "first_row": 1826,
+   "last_date": "2026-08-30 00:00:00",
+   "last_row": 2798
+  },
+  "ETHUSDT": {
+   "first_date": "2024-01-01 00:00:00",
+   "first_row": 1826,
+   "last_date": "2026-08-30 00:00:00",
+   "last_row": 2798
+  },
+  "LTCUSDT": {
+   "first_date": "2024-01-01 00:00:00",
+   "first_row": 1826,
+   "last_date": "2026-08-30 00:00:00",
+   "last_row": 2798
+  },
+  "TRXUSDT": {
+   "first_date": "2024-01-01 00:00:00",
+   "first_row": 1826,
+   "last_date": "2026-08-30 00:00:00",
+   "last_row": 2798
+  },
+  "XLMUSDT": {
+   "first_date": "2024-01-01 00:00:00",
+   "first_row": 1826,
+   "last_date": "2026-08-30 00:00:00",
+   "last_row": 2798
+  },
+  "XRPUSDT": {
+   "first_date": "2024-01-01 00:00:00",
+   "first_row": 1826,
+   "last_date": "2026-08-30 00:00:00",
+   "last_row": 2798
+  }
+ },
+ "git_commit": null,
+ "mode": "final",
+ "outputs": {
+  "blocks.csv": "50780eb8897934c932145bfc10db31392eee0905dd789a1ca055b7abbe42ed29",
+  "calendar_years.csv": "d8444e33894afe8c5491baeba550a82e80e6343c08057d7ddf36bda3a40d24bf",
+  "combination_log.json": "4195d86b7c71c80f39ce24d5c4c908771dbe46867f87362144319064c53bf049",
+  "comparison.csv": "fa3b5dc0908b052370cbf5bc8bec57062a3555363d572362dcf0f13457dededf",
+  "pooled_vs_specific.csv": "10ae2b210faa4ce862a33dce58fe9cb9326097d603741dbaefabb7d1941e81f5"
+ },
+ "panel": "crypto_g21",
+ "reserved_final_start": "2024-01-01",
+ "reserved_final_start_row": 1826,
+ "rq": "span",
+ "runtime_seconds": 488.8745617920067,
+ "source_tree_sha256": "b0a61ff813e603fcdd6d5e881c08ea2f3eeefa5576789b0a2b0213bc32fe8552",
+ "study": "realized-volatility-forecasting / crypto protocol transfer",
+ "transfer_config_sha256": "3c66fe815bbdea3e35ff394dae5f4aa6d5a8339a0efda86b9bb2a2b9d16f0d7e",
+ "written_utc": "2026-09-25T01:52:22Z"
+}

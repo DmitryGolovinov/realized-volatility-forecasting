@@ -1,0 +1,197 @@
+[
+ {
+  "origin": 1000,
+  "model": "logHAR_pooled",
+  "seconds": 0.004430291999597102
+ },
+ {
+  "origin": 1000,
+  "model": "RF_pooled",
+  "seconds": 4.378974957973696
+ },
+ {
+  "origin": 1000,
+  "model": "NN_pooled",
+  "seconds": 2.3707392920041457
+ },
+ {
+  "origin": 1252,
+  "model": "logHAR_pooled",
+  "seconds": 0.0030926670297048986
+ },
+ {
+  "origin": 1252,
+  "model": "RF_pooled",
+  "seconds": 5.262564958014991
+ },
+ {
+  "origin": 1252,
+  "model": "NN_pooled",
+  "seconds": 3.0539298339863308
+ },
+ {
+  "origin": 1504,
+  "model": "logHAR_pooled",
+  "seconds": 0.0021104170009493828
+ },
+ {
+  "origin": 1504,
+  "model": "RF_pooled",
+  "seconds": 6.234329875034746
+ },
+ {
+  "origin": 1504,
+  "model": "NN_pooled",
+  "seconds": 2.9053985420032404
+ },
+ {
+  "origin": 1756,
+  "model": "logHAR_pooled",
+  "seconds": 0.0018522500176914036
+ },
+ {
+  "origin": 1756,
+  "model": "RF_pooled",
+  "seconds": 7.511350375018083
+ },
+ {
+  "origin": 1756,
+  "model": "NN_pooled",
+  "seconds": 4.684030167001765
+ },
+ {
+  "origin": 2008,
+  "model": "logHAR_pooled",
+  "seconds": 0.0021732920431531966
+ },
+ {
+  "origin": 2008,
+  "model": "RF_pooled",
+  "seconds": 8.50752400001511
+ },
+ {
+  "origin": 2008,
+  "model": "NN_pooled",
+  "seconds": 3.982552958012093
+ },
+ {
+  "origin": 2260,
+  "model": "logHAR_pooled",
+  "seconds": 0.0025123339728452265
+ },
+ {
+  "origin": 2260,
+  "model": "RF_pooled",
+  "seconds": 9.096620917029213
+ },
+ {
+  "origin": 2260,
+  "model": "NN_pooled",
+  "seconds": 3.467879749950953
+ },
+ {
+  "origin": 2512,
+  "model": "logHAR_pooled",
+  "seconds": 0.00282716698711738
+ },
+ {
+  "origin": 2512,
+  "model": "RF_pooled",
+  "seconds": 9.786000374995638
+ },
+ {
+  "origin": 2512,
+  "model": "NN_pooled",
+  "seconds": 7.758192666980904
+ },
+ {
+  "origin": 2764,
+  "model": "logHAR_pooled",
+  "seconds": 0.011298749945126474
+ },
+ {
+  "origin": 2764,
+  "model": "RF_pooled",
+  "seconds": 11.0734605420148
+ },
+ {
+  "origin": 2764,
+  "model": "NN_pooled",
+  "seconds": 6.653106292011216
+ },
+ {
+  "origin": 3016,
+  "model": "logHAR_pooled",
+  "seconds": 0.0024127920041792095
+ },
+ {
+  "origin": 3016,
+  "model": "RF_pooled",
+  "seconds": 12.38801345799584
+ },
+ {
+  "origin": 3016,
+  "model": "NN_pooled",
+  "seconds": 6.63882920803735
+ },
+ {
+  "origin": 3268,
+  "model": "logHAR_pooled",
+  "seconds": 0.0020624169846996665
+ },
+ {
+  "origin": 3268,
+  "model": "RF_pooled",
+  "seconds": 13.568505415983964
+ },
+ {
+  "origin": 3268,
+  "model": "NN_pooled",
+  "seconds": 7.014630208024755
+ },
+ {
+  "origin": 3520,
+  "model": "logHAR_pooled",
+  "seconds": 0.00254266697447747
+ },
+ {
+  "origin": 3520,
+  "model": "RF_pooled",
+  "seconds": 12.445018082973547
+ },
+ {
+  "origin": 3520,
+  "model": "NN_pooled",
+  "seconds": 6.6763908750144765
+ },
+ {
+  "origin": 3772,
+  "model": "logHAR_pooled",
+  "seconds": 0.003054542001336813
+ },
+ {
+  "origin": 3772,
+  "model": "RF_pooled",
+  "seconds": 13.515651374997105
+ },
+ {
+  "origin": 3772,
+  "model": "NN_pooled",
+  "seconds": 7.70639237499563
+ },
+ {
+  "origin": 4024,
+  "model": "logHAR_pooled",
+  "seconds": 0.0029328750097192824
+ },
+ {
+  "origin": 4024,
+  "model": "RF_pooled",
+  "seconds": 14.458537208964117
+ },
+ {
+  "origin": 4024,
+  "model": "NN_pooled",
+  "seconds": 6.0114338750136085
+ }
+]

@@ -1,0 +1,29 @@
+# Realized-variance forecasting protocol. Frozen before development results were inspected.
+data:
+  assets: [AAPL, JPM, IBM, BA, PG]
+  source_dir: data/raw           # local import of the supplied parquet files (not redistributed)
+  rows: 4257                     # no dates are supplied: time is the row index
+target: {column: rv_d, horizon: 1, space: variance}   # predict RV_{t+1}; volatility never mixed in
+splits:
+  final_start_row: 3405          # last 20% reserved (AAPL's block was viewed in the original)
+  initial_train_rows: 1000
+  refit_every_rows: 252          # "annual" refits on the row clock
+  inner_validation_frac: 0.2     # last 20% of each training window: early stopping, smearing
+features:
+  har: [log_rv_d, log_rv_w, log_rv_m]
+  asset_extra: [iv, ea, mom1w, dolvol, log_rv_n, log_rv_p, r_d, r_w, r_m, rq_d]
+  macro: [vix, epu, us3m, hsi, ads]   # retrospective sensitivity only (timing/vintage unknown)
+models:
+  rf: {n_estimators: 300, max_features: 0.33, min_samples_leaf: [5, 20], max_depth: [8, null]}
+  nn: {layers: [16, 8, 4], lr: 0.001, batch: 128, max_epochs: 200, patience: 15, l1: 1.0e-5, seeds: [0, 1, 2]}
+  lstm: {hidden: 16, lookback: 22, lr: 0.001, batch: 128, max_epochs: 100, patience: 10, dropout: 0.1, seeds: [0, 1]}
+combination:
+  min_history_rows: 252
+  grid_step: 0.1                  # simplex grid over the five individual models
+  floor_quantile_of_training_rv: 0.0   # floor = min training RV (training-only, predeclared)
+evaluation:
+  block_rows: 252
+  hac_lags: 5
+  bootstrap: {block: 20, n_boot: 1000}
+seed: 0
+threads: 2

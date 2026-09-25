@@ -1,0 +1,33 @@
+# Generation 2 (c): protocol transfer of the FROZEN Generation-1 RV protocol (configs/study.yaml:
+# model set, hyperparameters, seeds, row-clock splits, combination rule, evaluation) to a new,
+# dated, public asset class. Written 2026-09-24 BEFORE any crypto data were downloaded.
+# Nothing is retuned; only the feature set is restricted to what exists for crypto.
+data:
+  provider: Binance public data (data.binance.vision), spot monthly 5-minute klines, SHA-256 checked
+  assets: [BTCUSDT, ETHUSDT, BNBUSDT, XRPUSDT, ADAUSDT, LTCUSDT, TRXUSDT, XLMUSDT]
+  months: ["2018-12", "2026-08"]      # 2018-12 only warms up the 30-day features
+  first_day: "2019-01-01"
+  last_day: "2026-08-31"
+  day: UTC calendar day, 288 five-minute returns (00:00-24:00), 24/7 market
+definitions:
+  rv_d: sum of squared 5-minute log returns (close to close; a gap's return is booked on the next bar)
+  rv_n / rv_p: negative / positive realized semivariance (rv_n + rv_p = rv_d)
+  rq_d: realized quarticity (288/3) * sum r^4
+  rv_w / rv_m: trailing means of rv_d over 7 and 30 days (the 5 and 22 trading days of stocks)
+  r_d: min(daily open-to-close log return, 0)    # as recovered for the supplied stock panel
+  r_w / r_m: min(mean daily open-to-close return over 7 / 30 days, 0)
+  mom1w: 7-day close-to-close log return
+  dolvol: daily log change of quote (USDT) volume
+features:
+  har: [log_rv_d, log_rv_w, log_rv_m]
+  asset_extra: [mom1w, dolvol, log_rv_n, log_rv_p, r_d, r_w, r_m, rq_d]   # no iv, no earnings
+  macro: []                          # no macro sensitivity in the transfer
+splits:
+  final_start: "2024-01-01"          # reserved final 2024-01-01..2026-08-31, never computed first
+  initial_train_rows: 1000           # frozen row clock (first forecast 2021-09-27)
+  refit_every_rows: 252
+  inner_validation_frac: 0.2
+primary: >
+  Does the Generation-1 ranking hold: equal-weight combination at least as good as the best
+  prior individual model (QLIKE relative to HAR), per asset and pooled over assets?
+diagnostics: [median and trimmed-mean combinations, leave-one-model-out equal weights]

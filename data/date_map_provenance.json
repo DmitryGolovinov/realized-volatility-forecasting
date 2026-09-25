@@ -1,0 +1,59 @@
+{
+ "method": "Viterbi alignment of sign(r_d < 0) to sign(public open-to-close < 0); rows may omit exchange days, never repeat or reorder them",
+ "reference": "Yahoo Finance daily Open/Close via yfinance (not stored)",
+ "yfinance_version": "1.7.0",
+ "retrieved_utc": "2026-09-24T04:54:13Z",
+ "first_date": "2001-01-29",
+ "last_date": "2018-01-02",
+ "rows": 4257,
+ "omitted_exchange_days": [
+  "2005-08-03",
+  "2013-06-06"
+ ],
+ "mean_sign_agreement_of_5": 4.831571529245948,
+ "rows_with_agreement_le_2": 4,
+ "per_asset_sign_agreement": {
+  "AAPL": 0.9807376086445854,
+  "JPM": 0.9701667841202725,
+  "IBM": 0.9631195677707306,
+  "BA": 0.9633544749823819,
+  "PG": 0.9541930937279774
+ },
+ "shifted_minus1_agreement": 0.4923655156213296,
+ "shifted_plus1_agreement": 0.4939628846605591,
+ "skip_margins": [
+  {
+   "row": 1133,
+   "omitted_days": 1,
+   "margin_vs_shift_1_3_rows": -0.0
+  },
+  {
+   "row": 3105,
+   "omitted_days": 1,
+   "margin_vs_shift_1_3_rows": 1.0
+  }
+ ],
+ "switch_refinement": [
+  {
+   "viterbi_row": 1133,
+   "chosen_row": 1133,
+   "value_distance_chosen": 0.01536434334512634,
+   "value_distance_runner_up": 0.01900247833818479
+  },
+  {
+   "viterbi_row": 3105,
+   "chosen_row": 3105,
+   "value_distance_chosen": 0.011501182847614963,
+   "value_distance_runner_up": 0.02736253049582172
+  }
+ ],
+ "min_rolling20_agreement_of_5": 4.35,
+ "reads_reserved_rows": "sign and size of r_d (rows >= 3405 included), to date them and place the omissions; no variance, target, or model output is read",
+ "key_rows": {
+  "0": "2001-01-29",
+  "1000": "2005-01-24",
+  "3404": "2014-08-14",
+  "3405": "2014-08-15",
+  "4256": "2018-01-02"
+ }
+}
