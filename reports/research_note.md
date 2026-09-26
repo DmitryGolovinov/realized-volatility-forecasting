@@ -27,7 +27,7 @@ development 2006-01..2014-08, final 2014-08..2017-12) and eight crypto assets fr
 5-minute bars under the same frozen protocol (development 2022-06..2023-12, final
 2024-01..2026-08). The crypto study is the stronger evidence: its data are public and dated.
 
-## Where the gains come from: predeclared paired contrasts
+## Where the gains come from: paired contrasts
 
 Raw QLIKE differences over all asset-days (negative: the first forecast has the lower loss).
 Intervals: 95% moving-block bootstrap over dates (blocks of 20, 2,000 draws) with every asset of

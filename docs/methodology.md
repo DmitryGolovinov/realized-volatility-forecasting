@@ -60,7 +60,7 @@ No option or volatility-trading claim is made.
 **Paired losses across the cross-section (Generation 2.1).** Per-asset intervals treat each
 asset separately, but all assets are forecast on the same dates and share volatility shocks.
 `scripts/paired_losses.py` rebuilds each run's evaluation rows from its saved forecasts (checked
-against `comparison.csv` to 1e-10) and reports sixteen predeclared contrasts (`src/rvf/paired.py`:
+against `comparison.csv` to 1e-10) and reports sixteen paired contrasts (`src/rvf/paired.py`:
 target scale, features, nonlinearity, pooling, averaging, protection, context) as raw panel-mean
 QLIKE differences, pooled ratios and means of per-asset ratios. Intervals: moving-block bootstrap
 over DATES (block 20, 2,000 draws, seed 0) with every asset of a drawn date kept together; a

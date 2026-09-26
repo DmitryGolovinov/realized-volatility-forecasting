@@ -2,7 +2,7 @@
 
 Compares results/crypto_<mode>/ (Generation 2 panel) with results/crypto_g21_<mode>/ (span-aware
 quarticity on days with missing bars) for mode in dev, final: mean relative QLIKE per model and
-every predeclared paired contrast. Writes results/g21_vs_g2.json. Reads saved artifacts only.
+every paired contrast. Writes results/g21_vs_g2.json. Reads saved artifacts only.
 """
 
 from __future__ import annotations

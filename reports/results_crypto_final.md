@@ -133,7 +133,7 @@ Panel means over 973 dates x 8 assets. Intervals: 95% moving-block bootstrap ove
 | EW_wo_NN      |      0.3791 | -0.1290 [-0.1658, -0.0840] | 0.746 [0.605, 0.878]  | 0.761 [0.631, 0.843]   |
 | EW_wo_LSTM    |      0.38   | -0.1280 [-0.1665, -0.0792] | 0.748 [0.602, 0.886]  | 0.762 [0.629, 0.849]   |
 
-## Predeclared contrasts: where does the gain come from?
+## Paired contrasts: where does the gain come from?
 
 Negative difference: the first forecast has the lower loss. `MeanMemberLoss` is the average loss of the five equal-weight members, not a forecast. NW t: Newey-West (5 lags) t-statistic of the cross-asset mean daily difference.
 

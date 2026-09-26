@@ -267,7 +267,7 @@ def paired_sections(res: Path) -> list[str]:
         "",
         tab.to_markdown(index=False),
         "",
-        "## Predeclared contrasts: where does the gain come from?",
+        "## Paired contrasts: where does the gain come from?",
         "",
         "Negative difference: the first forecast has the lower loss. `MeanMemberLoss` is the "
         "average loss of the five equal-weight members, not a forecast. NW t: Newey-West "

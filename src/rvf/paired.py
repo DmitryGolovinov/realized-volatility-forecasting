@@ -29,7 +29,7 @@ from .evaluate import nw_tstat
 INDIVIDUAL = ["HAR", "HARX", "RF", "NN", "LSTM"]  # the equal-weight members (frozen protocol)
 MEMBER_MEAN = "MeanMemberLoss"  # not a forecast: the average of the members' losses per cell
 
-# (contrast, forecast a, forecast b, question). Predeclared 2026-09-24, before any was computed.
+# (contrast, forecast a, forecast b, question)
 CONTRASTS = [
     ("target_scale", "logHAR", "HAR", "log-target OLS versus level OLS, same HAR regressors"),
     ("features", "HARX", "logHAR", "extra asset features in the same log-OLS"),

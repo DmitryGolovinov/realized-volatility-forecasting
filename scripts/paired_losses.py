@@ -4,7 +4,7 @@
 
 For each run: the evaluation rows are rebuilt exactly as the run scored them (rows with a
 resolved combination and prior-best forecast; in final mode only rows >= the reserved start),
-every asset's mean QLIKE is checked against the run's ``comparison.csv``, and the predeclared
+every asset's mean QLIKE is checked against the run's ``comparison.csv``, and the paired
 contrasts of ``rvf.paired`` are written to ``results/<run>/paired_losses.csv`` with a joint
 (all assets per date) moving-block bootstrap. Crypto runs add a sensitivity sample without the
 target days on which any asset has fewer than 95% of its 288 five-minute bars.
