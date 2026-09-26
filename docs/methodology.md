@@ -27,13 +27,21 @@ at row t is known at the end of row t+1, so the window [21, r) contains only mat
 
 ## From log forecasts to variance levels
 
-exp(E[log RV | x]) estimates a conditional median, not the conditional mean, so a plain exp
-is biased low. Every log model multiplies by a Duan smearing factor s = mean(exp(e)) computed
-on inner-validation log residuals, winsorized at their 1%/99% quantiles (amendment rvf-1: an
+Exponentiating the conditional mean of log RV gives a conditional geometric mean, generally
+below the arithmetic conditional mean. Log forecasts use a Duan smearing factor
+s = mean(exp(e)), with residuals winsorized at their 1%/99% quantiles (amendment rvf-1: an
 unwinsorized factor reached 3.6e8 for PG HAR-X, recorded in an unpublished superseded run log). This is an approximation, not an exact
 conditional-mean correction: Duan's estimator assumes residuals independent of the regressors,
 and winsorizing trades a small downward bias for robustness to extreme residuals. All level forecasts are floored at the
 training-window minimum RV, fixed before the outcome is known.
+
+**Pooled-model comparison.** Asset-specific OLS and RF estimate smearing from an inner fit's
+validation residuals. In the current pooled implementation, `run_pooled` instead predicts those
+validation rows after OLS/RF have been refitted on the full training window. These are fitted
+residuals, so pooling and retransformation change together. All observations still precede the
+forecast; this is a comparison inconsistency, not future-label leakage. I treat the saved pooled
+OLS/RF comparisons as exploratory. The saved numerical results have not been recomputed under
+a harmonized smearing procedure. Pooled NN does not use the same full-window refit.
 
 ## Combination
 
@@ -61,11 +69,17 @@ No option or volatility-trading claim is made.
 asset separately, but all assets are forecast on the same dates and share volatility shocks.
 `scripts/paired_losses.py` rebuilds each run's evaluation rows from its saved forecasts (checked
 against `comparison.csv` to 1e-10) and reports sixteen paired contrasts (`src/rvf/paired.py`:
-target scale, features, nonlinearity, pooling, averaging, protection, context) as raw panel-mean
+HAR specification, features, nonlinearity, pooling, averaging, protection, context) as raw panel-mean
 QLIKE differences, pooled ratios and means of per-asset ratios. Intervals: moving-block bootstrap
 over DATES (block 20, 2,000 draws, seed 0) with every asset of a drawn date kept together; a
 Newey-West t (5 lags) of the cross-asset mean daily difference is reported alongside. The
 "members' mean loss" is the per-cell average of the five members' losses (not a forecast).
+
+The historical contrast identifier `target_scale` compares level HAR with log-HAR. It changes
+the target, HAR regressors and retransformation together; it does not isolate the target
+transformation. Any "same regressors" wording in historical artifact labels refers to the
+same daily/weekly/monthly horizons, not identical numerical regressors. The intervals are
+pointwise across contrasts and are not adjusted for multiple comparisons.
 
 ## Missing bars and quarticity (Generation 2.1)
 
@@ -94,7 +108,7 @@ target days below 95% bar coverage (one development date, no final date).
 | Common information set | every model forecasts row t+1 from features of rows <= t; the LSTM's 22-row sequences end at t | `test_sequences_use_only_past_rows` |
 | Row maturity | training window [21, r) at origin r: the label of row r-1 (rv of row r) is known when the forecast for row r+1 is made | `test_training_rows_end_before_each_origin_and_future_invariance` |
 | Pooled per-asset scaling | each asset's moments from its own inner-train rows only | `test_pooled_scaling_and_forecasts_use_only_past_rows` |
-| Smearing | inner-validation residuals of the training window, winsorized | `test_smearing_*` |
+| Smearing | winsorized past residuals; pooled OLS/RF use post-refit residuals as described above | `test_smearing_*` checks the estimator, not equivalence of pooled and asset-specific fitting |
 | Positivity floor | minimum training RV; binds for 6 of 7,784 crypto-final cells (HAR-X 4, NN 2), none in the stock final | forecast files (`*__floored`; parquet, not published) |
 | Refit policy | expanding window, every 252 rows, identical origins for all models | harness logs (`fitlog_*.json`) |
 | Combination history | weights and prior-best choice from out-of-sample rows < r only | `test_simplex_grid_and_combination_uses_history_only` |

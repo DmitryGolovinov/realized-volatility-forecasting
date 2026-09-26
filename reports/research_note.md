@@ -55,9 +55,11 @@ no learner was added.
 
 ## Findings
 
-1. **The log target is the one gain that holds everywhere.** log-HAR beats level HAR in all four
-   samples, with intervals that exclude zero. In the crypto final it accounts for 0.124 of the
-   0.134 by which equal weighting improves on HAR's mean QLIKE (0.508).
+1. **The log-HAR specification improves on level HAR in all four samples.** The paired intervals
+   exclude zero. This comparison changes the target, predictor transformations and
+   retransformation together, so it does not identify a gain due to the log target alone.
+   Its crypto-final QLIKE reduction is 0.124, compared with 0.134 for equal weighting relative
+   to HAR's mean QLIKE of 0.508; these are comparisons, not an additive attribution.
 2. **Averaging reliably beats the average member, not the best alternatives.** Equal weighting
    has a lower loss than its members' average loss in all four samples. Against selecting the
    best model on prior out-of-sample data, no sample resolves the difference (the point estimate
@@ -68,9 +70,12 @@ no learner was added.
    log-OLS on the same features, the random forest is worse with intervals excluding zero in the
    stock final and crypto development, the NN3 is worse in stock development, and the rest is
    unresolved. Model rankings do not travel between periods or asset classes.
-4. **Pooling helps some models in some samples.** Pooling the random forest and the NN3 across
-   assets resolves a gain in stock development only, where pooled log-HAR is marginally but
-   resolvably worse; elsewhere the intervals include zero.
+4. **Pooling results depend on the sample and fitting procedure.** Pooled NN3 improves on its
+   asset-specific version with an interval excluding zero in stock development only. For
+   pooled log-HAR and RF, the current code computes smearing from post-refit residuals, while
+   the asset-specific versions use inner-fit validation residuals. Their saved differences
+   therefore combine pooling and retransformation effects and remain exploratory. See
+   [methodology](../docs/methodology.md); a harmonized comparison has not been computed.
 5. **Part of the combination gain is robustness to a weak member.** Dropping level HAR, the
    median and the trimmed mean all improve on equal weighting in the stock final (resolved) and
    the trimmed mean marginally in the crypto final. In stock development they are worse
@@ -94,7 +99,7 @@ unbiased for sigma^4 when volatility is constant over the day, with Gaussian inc
 drift or jumps (`tests/test_g21.py`); if volatility varies within the day it estimates a
 gap-weighted average of sigma^4, not integrated quarticity. Rerunning both crypto samples
 with it changed forecasts of the quarticity-using models on individual days. It moved no mean
-QLIKE ratio by more than 0.0016 and changed no contrast's sign or interval verdict
+QLIKE ratio by as much as 0.0017 and changed no contrast's sign or interval verdict
 (`results/g21_vs_g2.json`). The final rerun is a disclosed recomputation of an exposed sample.
 
 ## Limitations
